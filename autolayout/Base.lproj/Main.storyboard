@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11163.2" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Q9w-io-FBg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11163.2" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9Uj-17-jT9">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11133"/>
@@ -67,23 +67,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fPx-at-umw">
-                                <color key="backgroundColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dvy-yO-TMS">
-                                <color key="backgroundColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="Button"/>
-                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZQ3-u8-gAr">
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fPx-at-umw">
+                                        <color key="backgroundColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="42" id="N83-0J-VFU"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="Button1"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dvy-yO-TMS">
+                                        <color key="backgroundColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="42" id="paH-yb-nMU"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="Button2"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Dvy-yO-TMS" firstAttribute="leading" secondItem="fPx-at-umw" secondAttribute="trailing" constant="10" id="5Hs-eB-9nN"/>
+                                    <constraint firstItem="fPx-at-umw" firstAttribute="leading" secondItem="ZQ3-u8-gAr" secondAttribute="leading" constant="10" id="5iC-UB-cLZ"/>
+                                    <constraint firstItem="fPx-at-umw" firstAttribute="leading" secondItem="ZQ3-u8-gAr" secondAttribute="leading" constant="10" id="Fhp-Fl-Vzw"/>
+                                    <constraint firstAttribute="trailing" secondItem="Dvy-yO-TMS" secondAttribute="trailing" constant="10" id="HQZ-sc-Egt"/>
+                                    <constraint firstItem="fPx-at-umw" firstAttribute="top" secondItem="ZQ3-u8-gAr" secondAttribute="top" constant="15" id="YUi-sO-NTo"/>
+                                    <constraint firstItem="Dvy-yO-TMS" firstAttribute="top" secondItem="ZQ3-u8-gAr" secondAttribute="top" constant="15" id="joF-ff-kRt"/>
+                                    <constraint firstItem="Dvy-yO-TMS" firstAttribute="width" secondItem="fPx-at-umw" secondAttribute="width" id="njo-hh-7ir"/>
+                                    <constraint firstItem="Dvy-yO-TMS" firstAttribute="leading" secondItem="fPx-at-umw" secondAttribute="trailing" constant="10" id="yyG-qH-BoO"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="Dvy-yO-TMS" firstAttribute="centerY" secondItem="3O8-SL-Enr" secondAttribute="centerY" id="6b5-p0-274"/>
-                            <constraint firstItem="Dvy-yO-TMS" firstAttribute="centerX" secondItem="3O8-SL-Enr" secondAttribute="centerX" constant="42" id="843-J6-58w"/>
-                            <constraint firstItem="fPx-at-umw" firstAttribute="centerX" secondItem="3O8-SL-Enr" secondAttribute="centerX" constant="-42" id="9tE-s1-hYx"/>
-                            <constraint firstItem="fPx-at-umw" firstAttribute="centerY" secondItem="3O8-SL-Enr" secondAttribute="centerY" id="Nqs-2X-Q08"/>
+                            <constraint firstItem="ZQ3-u8-gAr" firstAttribute="centerY" secondItem="3O8-SL-Enr" secondAttribute="centerY" id="7rg-BW-SIO"/>
+                            <constraint firstItem="ZQ3-u8-gAr" firstAttribute="centerX" secondItem="3O8-SL-Enr" secondAttribute="centerX" id="NJU-bL-sri"/>
+                            <constraint firstItem="ZQ3-u8-gAr" firstAttribute="top" secondItem="7do-gK-SXa" secondAttribute="bottom" constant="280" id="a1G-Pk-s50"/>
                         </constraints>
                     </view>
                 </viewController>
